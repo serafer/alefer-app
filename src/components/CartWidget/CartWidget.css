@@ -1,0 +1,20 @@
+.ChartWidget {
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.ChartWidget div, p, img{
+
+    padding-left: 20px;
+}
+
+/* .ChartWidget {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+} */
