@@ -15,9 +15,9 @@ const SuperiorNavbar = () => {
             </div>
 
             <div>
-            <img className='SocialSuperiorNavbar' src= {face} />
-            <img className='SocialSuperiorNavbar' src= {whatsapp} />
-            <img className='SocialSuperiorNavbar' src= {ig} />
+            <img className='SocialSuperiorNavbar' src= {face} alt ='facebook'/>
+            <img className='SocialSuperiorNavbar' src= {whatsapp} alt ='whatsapp'/>
+            <img className='SocialSuperiorNavbar' src= {ig} alt ='instagram'/>
 
             </div>
 
