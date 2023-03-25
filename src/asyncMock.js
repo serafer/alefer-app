@@ -131,6 +131,19 @@ const products = [
         description: 'Madurado con extremo cuidado en barricas de bourbon americano y jerez español al menos durante 12 años. Maridado y añejado en barricas de roble para lograr una completa armonía de aroma y sabor. Whisky escocés de una sola malta con distintivos sabores a pera fresca, cremoso y con sabor a roble tostado con un acabado maduro, largo y suave. Es la marca emblemática del whisky escocés de una sola malta más galardonado del mundo. 40% ALC/VOL, 70 CL',
     },
 
+    {
+        id: 'GINKGOPA000500',
+        productName: 'gin gingkgo patagonia',
+        productBrandName: 'patagonia',
+        productCategory: 'gin',
+        category: 'espirituosas',
+        size: '500ml',
+        price: 3700,
+        img: 'https://http2.mlstatic.com/D_NQ_NP_2X_757421-MLA53205613377_012023-F.webp',
+        stock: 5,
+        description: 'Intenso aroma y notas dulces por la adición de raíz de regaliz y canela. Perfil muy refrescante y aromático en el que el alcohol se balancea gracias a la sedosidad que aportan en boca y garganta el sauco, el maqui y la rosa mosqueta. Ginkgo es un gin estilo Dry Gin destilado cuatro veces en alambique de cobre, macerado previamente con 11 botánicos argentinos. Cuatro de ellos, provenientes de la Patagonia y cultivados de manera agroecológica.',
+    },
+
 
 
 ]
