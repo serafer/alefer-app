@@ -160,3 +160,14 @@ export const getProducts = () => {
         }, 1000)
     })
 } 
+
+
+export const getProductsById = (id) => {
+
+    return new Promise((resolve) => {
+
+        setTimeout(() => {
+            resolve(products.find (product => product.id === id ))
+        }, 1000)
+    })
+} 
