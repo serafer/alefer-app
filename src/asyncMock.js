@@ -161,6 +161,7 @@ export const getProducts = () => {
     })
 } 
 
+/* find objeto */
 
 export const getProductsById = (id) => {
 
@@ -168,6 +169,17 @@ export const getProductsById = (id) => {
 
         setTimeout(() => {
             resolve(products.find (product => product.id === id ))
+        }, 1000)
+    })
+} 
+
+/* filter array */
+export const getProductsByCategory = (category) => {
+
+    return new Promise((resolve) => {
+
+        setTimeout(() => {
+            resolve(products.filter (product => product.category === category ))
         }, 1000)
     })
 } 

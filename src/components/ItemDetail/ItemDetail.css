@@ -26,6 +26,14 @@
 
 }
 
+.card-detail-breadcrumbs {
+
+    font-size:small ;
+    text-align: start;
+    color:darkgray;
+    text-transform: uppercase;
+}
+
 .card-detail-title {
     text-align: start;
     padding-left: 20px;

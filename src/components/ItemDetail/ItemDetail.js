@@ -1,6 +1,6 @@
 import './ItemDetail.css'
 
-const ItemDetail = ({ id, productName, img, category, description, price, stock }) => {
+const ItemDetail = ({ id, productName, img, category, description, price, stock,productBrandName, productCategory }) => {
 
     return (
 
@@ -9,6 +9,7 @@ const ItemDetail = ({ id, productName, img, category, description, price, stock 
                 <img className="card-detail-img" src={img} alt={productName} />
             </div>
             <div className='card-detail-body' >
+            <p className='card-detail-breadcrumbs' >Inicio > {category} > {productCategory} > {productBrandName} > {productName} </p>
             <h3 className='card-detail-title' >{productName}</h3>
                 <p className='card-detail-price' >${price}</p>
                 <div className='card-detail-msj'> <i class='bx bxs-truck'> Envío sin cargo en compras superiores a $10.000</i></div>

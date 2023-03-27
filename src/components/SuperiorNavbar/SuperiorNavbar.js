@@ -10,8 +10,8 @@ const SuperiorNavbar = () => {
 
         <div className='SuperiorNavbar'>
 
-            <div style={{alignItems: 'center', margin: '0px'}}>
-                <p>central de bebidas</p>
+            <div style={{alignItems: 'center', marginTop: 10, marginBottom: 0}}>
+                <p>Distribuidora Andes Drink Co</p>
             </div>
 
             <div>

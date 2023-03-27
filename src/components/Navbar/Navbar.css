@@ -1,13 +1,4 @@
-.Navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.navbar {
+
+    width: 100%;
 }
-
-.NavButtons {
-
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-}
-

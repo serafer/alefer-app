@@ -91,7 +91,7 @@
 
 .card-button-add {
 
-    width: 40%;
+    width: 50%;
     border: none;
     outline: none;
     background-color: rgba(41, 51, 65, 1);
@@ -99,9 +99,8 @@
     cursor: pointer;
     transition: 0.5s;
     border-radius: 10px;
-
     height: 100%;
-    margin: 3%;
+    align-content: center;
 
 }
 
