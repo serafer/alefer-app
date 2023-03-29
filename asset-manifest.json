@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/alefer-app/static/css/main.afe30f81.css",
-    "main.js": "/alefer-app/static/js/main.b9e39f8a.js",
+    "main.css": "/alefer-app/static/css/main.862ef275.css",
+    "main.js": "/alefer-app/static/js/main.4b2cc860.js",
     "static/js/787.52040a06.chunk.js": "/alefer-app/static/js/787.52040a06.chunk.js",
     "static/media/cart.svg": "/alefer-app/static/media/cart.5e3e481d00d4a4f227129dc04409be3f.svg",
     "static/media/instagram.svg": "/alefer-app/static/media/instagram.bfbeb84750c2f7873eaa55992acd1ec2.svg",
     "static/media/whatsapp.svg": "/alefer-app/static/media/whatsapp.e77a3aecd6f191e0dfcffddc92c9572b.svg",
     "index.html": "/alefer-app/index.html",
     "static/media/facebook.svg": "/alefer-app/static/media/facebook.5913f3ab84c8a77e3c23d9c21eedccc7.svg",
-    "main.afe30f81.css.map": "/alefer-app/static/css/main.afe30f81.css.map",
-    "main.b9e39f8a.js.map": "/alefer-app/static/js/main.b9e39f8a.js.map",
+    "main.862ef275.css.map": "/alefer-app/static/css/main.862ef275.css.map",
+    "main.4b2cc860.js.map": "/alefer-app/static/js/main.4b2cc860.js.map",
     "787.52040a06.chunk.js.map": "/alefer-app/static/js/787.52040a06.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.afe30f81.css",
-    "static/js/main.b9e39f8a.js"
+    "static/css/main.862ef275.css",
+    "static/js/main.4b2cc860.js"
   ]
 }
