@@ -1,4 +1,5 @@
 import './ItemDetail.css'
+import ItemCounter from '../ItemCounter/ItemCounter'
 
 const ItemDetail = ({ id, productName, img, category, description, price, stock,productBrandName, productCategory }) => {
 
@@ -14,11 +15,9 @@ const ItemDetail = ({ id, productName, img, category, description, price, stock,
                 <p className='card-detail-price' >${price}</p>
                 <div className='card-detail-msj'> <i class='bx bxs-truck'> Envío sin cargo en compras superiores a $10.000</i></div>
                 <div className='card-detail-msj'><i class='bx bx-store-alt'> Retiro disponible en tienda</i></div>
-                <div className='card-detail-q-box'>
-                    <p> Cantidad </p>
-                    <p> + 1 - </p>
-                </div>
-                <button className='card-detail-add-button' >Añadir al carrito </button>
+                
+                <ItemCounter />
+
                 <div>
                     <p className='card-detail-description-title'>Descripción del producto</p>
                     <p className='card-detail-description'> {description} </p>

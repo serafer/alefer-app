@@ -12,8 +12,8 @@ function NavScrollExample() {
   return (
     <Navbar bg="light" expand="lg" sticky="top" className="navbar">
       <Container>
-      <Nav.Link href="/"><img src= "https://res.cloudinary.com/dxfhquzse/image/upload/v1679883912/OIG.hs0wxlNBWIwsjsP_zoom_dx7wuq.png" style={{width: 50}} /></Nav.Link>
-        <Navbar.Brand href="/">Andes Drink Co</Navbar.Brand>
+      <Nav.Link href="/alefer-app/"><img src= "https://res.cloudinary.com/dxfhquzse/image/upload/v1679883912/OIG.hs0wxlNBWIwsjsP_zoom_dx7wuq.png" style={{width: 50}} /></Nav.Link>
+        <Navbar.Brand href="/alefer-app/">Andes Drink Co</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -21,10 +21,10 @@ function NavScrollExample() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/category/cervezas">Cervezas</Nav.Link>
-            <Nav.Link href="/category/espirituosas">Espirituosas</Nav.Link>
-            <Nav.Link href="/category/espumante">Espumante</Nav.Link>
+            <Nav.Link href="/alefer-app/">Home</Nav.Link>
+            <Nav.Link href="/alefer-app/category/cervezas">Cervezas</Nav.Link>
+            <Nav.Link href="/alefer-app/category/espirituosas">Espirituosas</Nav.Link>
+            <Nav.Link href="/alefer-app/category/espumante">Espumante</Nav.Link>
             {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">

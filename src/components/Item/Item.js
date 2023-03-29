@@ -17,7 +17,7 @@ const Item = ({id, productName, img, price, size }) => {
 
                 <div className="card-buttons">
                     <button className="card-button-add"><i class="bx bx-plus"></i>{"Añadir"}</button>
-                    <Link to={`/item/${id}`} className='card-button-details'>Ver detalle</Link>
+                    <Link to={`/alefer-app/item/${id}`} className='card-button-details'>Ver detalle</Link>
                 </div>
 
             </div>

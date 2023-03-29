@@ -14,9 +14,9 @@ function App() {
         <SuperiorNavbar />
         <Navbar />
         <Routes>
-          <Route path="/" element={<ItemListContainer  greeting={'Andes Drink Co | E-Commerce'} />} />
-          <Route path="/category/:category" element={<ItemListContainer greeting={'Productos filtrados por categoria'}/>}/>
-          <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+          <Route path="/alefer-app/" element={<ItemListContainer  greeting={'Andes Drink Co | E-Commerce'} />} />
+          <Route path="/alefer-app/category/:category" element={<ItemListContainer greeting={'Productos filtrados por categoria'}/>}/>
+          <Route path="/alefer-app/item/:itemId" element={<ItemDetailContainer />} />
         </Routes>
       </BrowserRouter>
 

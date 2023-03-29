@@ -61,26 +61,6 @@ font-size: small;
 
 }
 
-.card-detail-q-box {
-
-    margin-top: 10px;
-    font-weight: lighter;
-}
-
-.card-detail-add-button {
-
-    width: 40%;
-    border: none;
-    outline: none;
-    background-color: rgba(41, 51, 65, 1);
-    color: #dcc2e4;
-    cursor: pointer;
-    transition: 0.5s;
-    border-radius: 10px;
-    height: 30px;
-    margin: 3%;
-}
-
 .card-detail-description-title {
 
     font-weight: bold;
