@@ -1,7 +1,15 @@
 import './ItemDetail.css'
 import ItemCounter from '../ItemCounter/ItemCounter'
+import ItemOutOfStock from '../ItemOutOfStock/ItemOutOfStock'
 
 const ItemDetail = ({ id, productName, img, category, description, price, stock,productBrandName, productCategory }) => {
+
+    const handleOnAdd = (quantity) => {
+
+        console.log ( `se agregaron ${quantity} de ${productName} `)
+    }
+
+
 
     return (
 
@@ -16,8 +24,8 @@ const ItemDetail = ({ id, productName, img, category, description, price, stock,
                 <div className='card-detail-msj'> <i class='bx bxs-truck'> Envío sin cargo en compras superiores a $10.000</i></div>
                 <div className='card-detail-msj'><i class='bx bx-store-alt'> Retiro disponible en tienda</i></div>
                 
-                <ItemCounter />
-
+                {stock==0 ? (<ItemOutOfStock/>) : (<ItemCounter onAdd={handleOnAdd} stock={stock} initial={1} />)}
+                
                 <div>
                     <p className='card-detail-description-title'>Descripción del producto</p>
                     <p className='card-detail-description'> {description} </p>

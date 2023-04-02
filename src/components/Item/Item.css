@@ -110,6 +110,25 @@
     background-color: rgb(8, 11, 14);
 }
 
+.out-stock-alert {
+
+    width: 50%;
+    border: none;
+    outline: none;
+    background-color: rgb(241, 161, 11);
+    color: #ffffff;
+    border-radius: 10px;
+    height: 100%;
+    align-content: center;
+    padding: 0px;
+    margin: 0px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
 
 
 .card-button-details {

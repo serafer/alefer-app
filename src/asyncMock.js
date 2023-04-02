@@ -183,3 +183,13 @@ export const getProductsByCategory = (category) => {
         }, 1000)
     })
 } 
+
+export const stockConsult = (stock) => {
+
+    return new Promise((resolve) => {
+
+        setTimeout(() => {
+            resolve(products.find (product => product.stock === stock ))
+        }, 1000)
+    })
+} 
