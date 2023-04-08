@@ -1,7 +1,7 @@
-import './ItemCounter.css'
+import './ItemCount.css'
 import { useState } from 'react'
 
-const ItemCounter = ({stock, initial, onAdd}) => {
+const ItemCount = ({stock, initial, onAdd}) => {
 
     const [quantity, setQuantity] = useState (initial)
 
@@ -32,4 +32,4 @@ const ItemCounter = ({stock, initial, onAdd}) => {
     )
 }
 
-export default ItemCounter
+export default ItemCount

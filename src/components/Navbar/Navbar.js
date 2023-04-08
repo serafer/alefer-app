@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-router-dom";
 
 import './Navbar.css';
 /* import NavDropdown from 'react-bootstrap/NavDropdown'; 
@@ -12,7 +13,7 @@ function NavScrollExample() {
   return (
     <Navbar bg="light" expand="lg" sticky="top" className="navbar">
       <Container>
-      <Nav.Link href="/alefer-app/"><img src= "https://res.cloudinary.com/dxfhquzse/image/upload/v1679883912/OIG.hs0wxlNBWIwsjsP_zoom_dx7wuq.png" style={{width: 50}} /></Nav.Link>
+      <Link to="/alefer-app/"><img src= "https://res.cloudinary.com/dxfhquzse/image/upload/v1679883912/OIG.hs0wxlNBWIwsjsP_zoom_dx7wuq.png" style={{width: 50}} /></Link>
         <Navbar.Brand href="/alefer-app/">Andes Drink Co</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -21,10 +22,10 @@ function NavScrollExample() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="/alefer-app/">Home</Nav.Link>
-            <Nav.Link href="/alefer-app/category/cervezas">Cervezas</Nav.Link>
-            <Nav.Link href="/alefer-app/category/espirituosas">Espirituosas</Nav.Link>
-            <Nav.Link href="/alefer-app/category/espumante">Espumante</Nav.Link>
+            <Link to={"/alefer-app/"} className="navbarLink" >Home</Link>
+            <Link to={"/alefer-app/category/cervezas"} className="navbarLink" >Cervezas</Link>
+            <Link to={"/alefer-app/category/espirituosas"} className="navbarLink" >Espirituosas</Link>
+            <Link to={"/alefer-app/category/espumante"} className="navbarLink" >Espumante</Link>
             {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">

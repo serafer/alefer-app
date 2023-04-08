@@ -1,19 +1,22 @@
 import cart from './assets/cart.svg'
 import './CartWidget.css'
+import { useCart } from '../../context/CartContext';
+import { Link } from 'react-router-dom';
+
 
 const CartWidget = () => {
+    const { totalQuantity, totalAmount } = useCart()
 
     return (
 
 
         <div className='ChartWidget'>
 
-            <p style={{margin: 0}} >ir al carrito</p>
-            
+            <Link to="/alefer-app/cart" style={{margin: 0, color: "white", textDecoration: "none"}} >Ir al carrito</Link>
             
             <img src={cart} alt='icono de carro de compras' />
             
-            <p style={{margin: 0}} > 0 Articulos $0.000 </p>
+            <p style={{margin: 0}} > {totalQuantity === 0 ? `` : totalQuantity >1 ? `${totalQuantity} Articulos $${totalAmount}` : `${totalQuantity} articulo $${totalAmount}` } </p>
 
         </div>
     )

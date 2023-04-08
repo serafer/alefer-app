@@ -25,8 +25,8 @@ const ItemListContainer = ({ greeting }) => {
             })
     }, [category])
 
-        console.log (getProducts())
-        console.log (getProductsByCategory(category))
+/*         console.log (getProducts())
+        console.log (getProductsByCategory(category)) */
 
 
 
