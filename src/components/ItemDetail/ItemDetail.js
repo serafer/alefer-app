@@ -4,6 +4,9 @@ import ItemOutOfStock from "../ItemOutOfStock/ItemOutOfStock";
 import { useCart } from "../../context/CartContext";
 import { Link } from "react-router-dom";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const ItemDetail = ({
     id,
     productName,
@@ -20,6 +23,18 @@ const ItemDetail = ({
     const handleOnAdd = (quantity) => {
         const prodToAdd = { id, productName, price, quantity };
         addItem(prodToAdd);
+
+        toast.success(quantity > 1 ? `Se agregaron ${quantity} ${productName.toUpperCase()} ` : `Se agregó ${quantity} ${productName.toUpperCase()} `, {
+            position: "top-right",
+            autoClose: 1500,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            });
+        
     };
 
     return (
@@ -57,6 +72,8 @@ const ItemDetail = ({
                     <p className="card-detail-description"> {description} </p>
                 </div>
             </div>
+            <ToastContainer />
+
         </div>
     );
 };
