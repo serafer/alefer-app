@@ -55,7 +55,7 @@ const products = [
 
     {
         id: 'ESPUMALA000750',
-        productName: 'espumante alambrado blanc de blancs',
+        productName: 'alambrado blanc de blancs',
         productBrandName: 'Santa Julia',
         productCategory: 'blanc de blancs',
         category: 'espumante',
@@ -75,7 +75,7 @@ const products = [
         size: 'Lata x 6un',
         price: 2500,
         img: 'https://http2.mlstatic.com/D_NQ_NP_2X_639229-MLA51963035792_102022-F.webp',
-        stock: '0',
+        stock: '10',
         description: 'Corona Extra es una cerveza de tipo Lager Pilsner, clara y brillante, de espuma blanca y consistente. Tiene notas afrutadas, de cuerpo medio, fresca, balanceada y muy fácil de beber. En boca es dulce y recuerda al sabor del cereal. Su amargor es limpio y ligero. País: México.',
     },
 

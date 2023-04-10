@@ -1,5 +1,7 @@
 import './ItemCount.css'
 import { useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ItemCount = ({stock, initial, onAdd}) => {
 
@@ -8,7 +10,18 @@ const ItemCount = ({stock, initial, onAdd}) => {
     const increment = () => {
         if(quantity < stock) {
             setQuantity(prevQuantity => prevQuantity+1)
-        }
+        } else {
+            toast.error(`Solo hay ${stock} unidades en stock`, {
+            position: "top-right",
+            autoClose: 1500,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            })
+            } 
     }
  
     const decrement = () => {
@@ -28,6 +41,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
             <div>
                 <button className="buttons" onClick={() => onAdd (quantity)} >Agregar al carrito</button>
             </div>
+            <ToastContainer />
        </div>
     )
 }

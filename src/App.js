@@ -5,6 +5,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
+import CartContainer from './components/CartContainer/CartContainer';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
             <Route path="/alefer-app/" element={<ItemListContainer greeting={'Andes Drink Co | E-Commerce'} />} />
             <Route path="/alefer-app/category/:category" element={<ItemListContainer greeting={'Productos filtrados por categoria'} />} />
             <Route path="/alefer-app/item/:itemId" element={<ItemDetailContainer />} />
-            <Route path="/alefer-app/cart" element={<h1>Cart</h1>} />
+            <Route path="/alefer-app/cart" element={<CartContainer  greeting={'Cart'}/> } />
             <Route path="/alefer-app/CheckOut" element={<h1>CheckOut</h1>} />
           </Routes>
         </CartProvider>

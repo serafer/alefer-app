@@ -11,7 +11,7 @@ const Item = ({id, productName, img, price, size,stock }) => {
     const { addItem, isInCart } = useCart();
 
     const handleOnAdd = (quantity) => {
-        const prodToAdd = { id, productName, price, quantity : 1 };
+        const prodToAdd = { id, productName, price, quantity : 1, img , size};
         addItem(prodToAdd);
 
         toast.success(`Se agregó ${productName.toUpperCase()} `, {
@@ -37,7 +37,7 @@ const Item = ({id, productName, img, price, size,stock }) => {
                 <h3 className="card-tittle">
                     {productName} {size}{" "}
                 </h3>
-                <p className="card-price">Precio: ${price} </p>
+                <p className="card-price">Precio: ${price.toLocaleString()} </p>
 
                 <div className="card-buttons">
                 {stock==0 ? ( <p className="out-stock-alert" >SIN STOCK</p> ) : (<button className="card-button-add" onClick={handleOnAdd} ><i className="bx bx-plus"></i>{"Añadir"}</button>)}

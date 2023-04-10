@@ -17,11 +17,12 @@ const ItemDetail = ({
     stock,
     productBrandName,
     productCategory,
+    size
 }) => {
     const { addItem, isInCart } = useCart();
 
     const handleOnAdd = (quantity) => {
-        const prodToAdd = { id, productName, price, quantity };
+        const prodToAdd = { id, productName, price, quantity, img, size };
         addItem(prodToAdd);
 
         toast.success(quantity > 1 ? `Se agregaron ${quantity} ${productName.toUpperCase()} ` : `Se agregó ${quantity} ${productName.toUpperCase()} `, {
@@ -48,16 +49,16 @@ const ItemDetail = ({
                     {productName}{" "}
                 </p>
                 <h3 className="card-detail-title">{productName}</h3>
-                <p className="card-detail-price">${price}</p>
+                <p className="card-detail-price">${price.toLocaleString()}</p>
                 <div className="card-detail-msj">
                     {" "}
-                    <i class="bx bxs-truck">
+                    <i className="bx bxs-truck">
                         {" "}
                         Envío sin cargo en compras superiores a $10.000
                     </i>
                 </div>
                 <div className="card-detail-msj">
-                    <i class="bx bx-store-alt"> Retiro disponible en tienda</i>
+                    <i className="bx bx-store-alt"> Retiro disponible en tienda</i>
                 </div>
 
                 {stock == 0 ? (<ItemOutOfStock />) :

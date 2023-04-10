@@ -16,7 +16,7 @@ const CartWidget = () => {
             
             <img src={cart} alt='icono de carro de compras' />
             
-            <p style={{margin: 0}} > {totalQuantity === 0 ? `` : totalQuantity >1 ? `${totalQuantity} Articulos $${totalAmount}` : `${totalQuantity} articulo $${totalAmount}` } </p>
+            <p style={{margin: 0}} > {totalQuantity === 0 ? `` : totalQuantity >1 ? `${totalQuantity} Articulos $${totalAmount.toLocaleString()}` : `${totalQuantity.toLocaleString()} articulo $${totalAmount.toLocaleString()}` } </p>
 
         </div>
     )

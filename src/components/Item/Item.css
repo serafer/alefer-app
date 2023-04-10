@@ -95,7 +95,7 @@
     border: none;
     outline: none;
     background-color: rgba(41, 51, 65, 1);
-    color: #dcc2e4;
+    color:#ffffff;
     cursor: pointer;
     transition: 0.5s;
     border-radius: 10px;
@@ -106,7 +106,7 @@
 
 .card-button-add:hover {
 
-    color: #fff;
+    color: #ffffff;
     background-color: rgb(8, 11, 14);
 }
 
@@ -133,13 +133,7 @@
 
 .card-button-details {
 
-    /*  background-color: transparent ;
-    width: 100%;
-    border-radius: 10px;
-
-    margin-left: 5px; */
-
-
+   
     width: 40%;
     height: 100%;
     margin: 3%;
