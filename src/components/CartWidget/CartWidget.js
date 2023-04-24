@@ -12,9 +12,9 @@ const CartWidget = () => {
 
         <div className='ChartWidget'>
 
-            <Link to="/alefer-app/cart" style={{margin: 0, color: "white", textDecoration: "none"}} >Ir al carrito</Link>
+            <Link to="/cart" style={{margin: 0, color: "white", textDecoration: "none"}} >Ir al carrito</Link>
             
-            <img src={cart} alt='icono de carro de compras' />
+            <Link to="/cart"><img src={cart} alt='icono de carro de compras' /></Link>
             
             <p style={{margin: 0}} > {totalQuantity === 0 ? `` : totalQuantity >1 ? `${totalQuantity} Articulos $${totalAmount.toLocaleString()}` : `${totalQuantity.toLocaleString()} articulo $${totalAmount.toLocaleString()}` } </p>
 

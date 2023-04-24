@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const ItemDetail = ({
     id,
-    productName,
+    name,
     img,
     category,
     description,
@@ -22,10 +22,10 @@ const ItemDetail = ({
     const { addItem, isInCart } = useCart();
 
     const handleOnAdd = (quantity) => {
-        const prodToAdd = { id, productName, price, quantity, img, size };
+        const prodToAdd = { id, name, price, quantity, img, size, stock };
         addItem(prodToAdd);
 
-        toast.success(quantity > 1 ? `Se agregaron ${quantity} ${productName.toUpperCase()} ` : `Se agregó ${quantity} ${productName.toUpperCase()} `, {
+        toast.success(quantity > 1 ? `Se agregaron ${quantity} ${name.toUpperCase()} ` : `Se agregó ${quantity} ${name.toUpperCase()} `, {
             position: "top-right",
             autoClose: 1500,
             hideProgressBar: false,
@@ -41,14 +41,14 @@ const ItemDetail = ({
     return (
         <div key={id} className="card-detail-container">
             <div className="card-detail-container-img">
-                <img className="card-detail-img" src={img} alt={productName} />
+                <img className="card-detail-img" src={img} alt={name} />
             </div>
             <div className="card-detail-body">
                 <p className="card-detail-breadcrumbs">
           Inicio > {category} > {productCategory} > {productBrandName} >{" "}
-                    {productName}{" "}
+                    {name}{" "}
                 </p>
-                <h3 className="card-detail-title">{productName}</h3>
+                <h3 className="card-detail-title">{name}</h3>
                 <p className="card-detail-price">${price.toLocaleString()}</p>
                 <div className="card-detail-msj">
                     {" "}
@@ -62,7 +62,7 @@ const ItemDetail = ({
                 </div>
 
                 {stock == 0 ? (<ItemOutOfStock />) :
-                    isInCart(id) ? (<Link to="/alefer-app/cart">Terminar compra</Link>) :
+                    isInCart(id) ? (<Link to="/cart">Terminar compra</Link>) :
                         (<ItemCount onAdd={handleOnAdd} stock={stock} initial={1} />
                         )}
 

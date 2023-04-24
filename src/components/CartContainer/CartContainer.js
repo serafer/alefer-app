@@ -10,12 +10,10 @@ import "./CartContainer.css";
 const CartContainer = () => {
     const [loading, setLoading] = useState(true);
 
-    const { cart, totalAmount, setCart } = useCart();
+    const { cart, totalAmount, setCart, stock } = useCart();
 
     useEffect(() => {
         setLoading(true);
-
-        console.log(cart);
 
         setLoading(false);
     }, [cart]);
@@ -56,26 +54,26 @@ const CartContainer = () => {
             <div className="cart-container-box" >
                 <div className="cart-container-box-upper">
 
-                    <Link to="/alefer-app/">
+                    <Link to="/">
 
                         <i className='bx bx-arrow-back cart-container-continue-button'> Volver a la tienda </i>
 
                     </Link>
 
                     <span className="cart-container-total-items">
-                    {cart.length === 0 ? `Aún no ha seleccionado ningún producto` : cart.length === 1 ? `Usted posee ${cart.length} ítem en su carrito` : `Usted posee ${cart.length} items en su carrito`}
+                        {cart.length === 0 ? `Aún no ha seleccionado ningún producto` : cart.length === 1 ? `Usted posee ${cart.length} ítem en su carrito` : `Usted posee ${cart.length} items en su carrito`}
 
                     </span>
 
                 </div>
 
                 <hr />
-<div className="cart-container-items">
-                {cart.map((product) => (
-                    <Cart key={product.id} {...product} />
-                ))}
-    
-</div>
+                <div className="cart-container-items">
+                    {cart.map((product) => (
+                        <Cart key={product.id} {...product} />
+                    ))}
+
+                </div>
 
                 <div className="cart-container-box-under">
                     <button onClick={emptyCart} className="cart-container-clean-button" >Vaciar carro</button>
@@ -83,8 +81,8 @@ const CartContainer = () => {
 
 
 
-                    <Link to="/alefer-app/CheckOut" className="cart-container-checkout-button"> Terminar mi compra
-                        <i class='bx bxs-chevrons-right'></i>
+                    <Link to="/Checkout" className="cart-container-checkout-button"> Terminar mi compra
+                        <i className='bx bxs-chevrons-right'></i>
                     </Link>
                 </div>
             </div>

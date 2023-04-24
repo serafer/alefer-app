@@ -5,16 +5,16 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const Item = ({id, productName, img, price, size,stock }) => {
+const Item = ({id, name, img, price, size,stock }) => {
 
 
     const { addItem, isInCart } = useCart();
 
     const handleOnAdd = (quantity) => {
-        const prodToAdd = { id, productName, price, quantity : 1, img , size};
+        const prodToAdd = { id, name, price, quantity : 1, img , size, stock};
         addItem(prodToAdd);
 
-        toast.success(`Se agregó ${productName.toUpperCase()} `, {
+        toast.success(`Se agregó ${name.toUpperCase()} `, {
             position: "top-right",
             autoClose: 1500,
             hideProgressBar: false,
@@ -31,11 +31,11 @@ const Item = ({id, productName, img, price, size,stock }) => {
     return (
         <div className="card">
             <div className="card-img-container">
-                <img className="card-img" src={img} alt={productName} />
+                <img className="card-img" src={img} alt={name} />
             </div>
             <div className="card-body">
                 <h3 className="card-tittle">
-                    {productName} {size}{" "}
+                    {name} {size}{" "}
                 </h3>
                 <p className="card-price">Precio: ${price.toLocaleString()} </p>
 
@@ -43,7 +43,7 @@ const Item = ({id, productName, img, price, size,stock }) => {
                 {stock==0 ? ( <p className="out-stock-alert" >SIN STOCK</p> ) : (<button className="card-button-add" onClick={handleOnAdd} ><i className="bx bx-plus"></i>{"Añadir"}</button>)}
 
                     
-                    <Link to={`/alefer-app/item/${id}`} className='card-button-details'>Ver detalle</Link>
+                    <Link to={`/item/${id}`} className='card-button-details'>Ver detalle</Link>
                 </div>
 
             </div>

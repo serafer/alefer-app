@@ -6,6 +6,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import CartContainer from './components/CartContainer/CartContainer';
+import Checkout from './components/Checkout/Checkout';
 
 
 function App() {
@@ -17,11 +18,11 @@ function App() {
           <SuperiorNavbar />
           <Navbar />
           <Routes>
-            <Route path="/alefer-app/" element={<ItemListContainer greeting={'Andes Drink Co | E-Commerce'} />} />
-            <Route path="/alefer-app/category/:category" element={<ItemListContainer greeting={'Productos filtrados por categoria'} />} />
-            <Route path="/alefer-app/item/:itemId" element={<ItemDetailContainer />} />
-            <Route path="/alefer-app/cart" element={<CartContainer  greeting={'Cart'}/> } />
-            <Route path="/alefer-app/CheckOut" element={<h1>CheckOut</h1>} />
+            <Route path="/" element={<ItemListContainer greeting={'Andes Drink Co | E-Commerce'} />} />
+            <Route path="/category/:category" element={<ItemListContainer greeting={'Productos filtrados por categoria'} />} />
+            <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+            <Route path="/cart" element={<CartContainer  greeting={'Cart'}/> } />
+            <Route path="/Checkout" element={<Checkout  greeting={'Checkout'}/> } />
           </Routes>
         </CartProvider>
       </BrowserRouter>

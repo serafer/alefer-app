@@ -3,7 +3,7 @@ const products = [
 
     {
         id: 'CAPELCXX000750',
-        productName: 'capel',
+        name: 'capel',
         productBrandName: 'capel',
         productCategory: 'piscos',
         category: 'espirituosas',
@@ -16,7 +16,7 @@ const products = [
 
     {
         id: 'CACHAPIT001000',
-        productName: 'cachaca pitu clasica',
+        name: 'cachaca pitu clasica',
         productBrandName: 'pitu',
         productCategory: 'cachacas',
         category: 'espitiruosas',
@@ -29,7 +29,7 @@ const products = [
 
     {
         id: 'AMARULAX001000',
-        productName: 'amarula',
+        name: 'amarula',
         productBrandName: 'amaruala',
         productCategory: 'licores',
         category: 'espirituosas',
@@ -42,7 +42,7 @@ const products = [
 
     {
         id: 'BAiLEYSC000750',
-        productName: 'baileys clasic',
+        name: 'baileys clasic',
         productBrandName: 'baileys',
         productCategory: 'licores',
         category: 'espirituosas',
@@ -55,7 +55,7 @@ const products = [
 
     {
         id: 'ESPUMALA000750',
-        productName: 'alambrado blanc de blancs',
+        name: 'alambrado blanc de blancs',
         productBrandName: 'Santa Julia',
         productCategory: 'blanc de blancs',
         category: 'espumante',
@@ -68,7 +68,7 @@ const products = [
 
     {
         id: 'COROLATA000269',
-        productName: 'corona extra lata',
+        name: 'corona extra lata',
         productBrandName: 'corona extra',
         productCategory: 'rubias',
         category: 'cervezas',
@@ -81,7 +81,7 @@ const products = [
 
     {
         id: 'ACONAZUL000750',
-        productName: 'aconcagua azul',
+        name: 'aconcagua azul',
         productBrandName: 'aconcagua',
         productCategory: 'gin',
         category: 'espirituosas',
@@ -94,7 +94,7 @@ const products = [
 
     {
         id: 'HENDRICK000700',
-        productName: 'gin hendricks',
+        name: 'gin hendricks',
         productBrandName: 'hendricks',
         productCategory: 'gin',
         category: 'espitituosas',
@@ -107,7 +107,7 @@ const products = [
 
     {
         id: 'CHIVASRE000750',
-        productName: 'chivas regal 12 años',
+        name: 'chivas regal 12 años',
         productBrandName: 'chivas',
         productCategory: 'wisky',
         category: 'espirituosas',
@@ -120,7 +120,7 @@ const products = [
 
     {
         id: 'GLENDFIG000750',
-        productName: 'glendfiddich 12 años',
+        name: 'glendfiddich 12 años',
         productBrandName: 'glendfiddich',
         productCategory: 'wisky',
         category: 'espirituosas',
@@ -133,7 +133,7 @@ const products = [
 
     {
         id: 'GINKGOPA000500',
-        productName: 'gin gingkgo patagonia',
+        name: 'gin gingkgo patagonia',
         productBrandName: 'patagonia',
         productCategory: 'gin',
         category: 'espirituosas',

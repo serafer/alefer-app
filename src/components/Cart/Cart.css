@@ -39,3 +39,12 @@
   align-items: center;
   
 }
+
+.cartButtonsAddLess {
+  width: 7%;
+  background-color: rgb(253, 253, 253);
+  color: black;
+  size: 25px;
+  border: solid black;
+  border-color: white ;
+}
