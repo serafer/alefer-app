@@ -57,6 +57,6 @@ npm start
 
 ## Demo
 
-Podes probar la aplicación funcionando haciendo 
+Podes probar la aplicación funcionando haciendo
+ 
 [click acá: gh-pages](https://serafer.github.io/alefer-app/)
-[click acá: vercel](https://alefer-app.vercel.app/)
